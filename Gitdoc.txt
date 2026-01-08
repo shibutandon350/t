@@ -1,0 +1,111 @@
+Git Commands
+# git config
+Usage: git config –global user.name “[name]”
+Usage: git config –global user.email “[email address]”
+
+Note: This command sets the author name and email address respectively to be used with your commits.
+# git config –global user.name “[Raman]”
+# git config –global user.email “[Raman@gmail.com]”
+ 
+
+# git init
+Usage: git init [repository name]
+Note: This command is used to start a new repository.
+ 
+
+# git clone
+Usage: git clone [url]  
+Note: This command is used to obtain a repository from an existing URL.
+ 
+
+#  git branch
+To check current git branch.
+ 
+
+#  git checkout
+To change or switch the branch into another branch.
+ 
+
+
+# git fetch
+To fetch latest update from git repository.
+ 
+
+# git remote -v
+To check your current git repository and its URL
+ 
+
+# git add
+Usage: git add [file]  
+Note: This command adds a file to the staging area.
+ 
+Usage: git add * or git add .
+Note: This command adds one or more to the staging area.
+ 
+  
+# git commit
+Usage: git commit -m “[ Type in the commit message]”  
+Note: This command records or snapshots the file permanently in the version history.
+ 
+
+
+Usage: git commit -a
+Note: This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+ 
+
+# git status
+Usage: git status 
+Note: This command lists all the files that have to be committed.
+ 
+
+# git push
+Usage: git push [variable name] master  
+Note: This command sends the committed changes of master branch to your remote repository.
+ 
+
+Usage: git push [variable name] [branch]  
+Note: This command sends the branch commits to your remote repository.
+ 
+
+Usage: git push –all [variable name]  
+Note: This command pushes all branches to your remote repository.
+ 
+
+Usage: git push [variable name] :[branch name]  
+Note: This command deletes a branch on your remote repository.
+ 
+
+# git stash
+Usage: git stash save  
+Note: This command temporarily stores all the modified tracked files.
+ 
+Usage: git stash pop  
+Note: This command restores the most recently stashed files.
+ 
+Usage: git stash list  
+Note: This command lists all stashed changesets.
+ 
+Note: This command discards the most recently stashed changeset.
+ 
+
+# git pull
+Usage: git pull <option> [<repository URL><refspec>...]
+Note: This command fetches and merges changes on the remote server to your working directory.
+ 
+
+# git log
+Usage: git log  
+Note: This command is used to list the version history for the current branch.
+ 
+
+Usage: git log –follow[file]  
+Note: This command lists version history for a file, including the renaming of files also.
+ 
+How to revert last commit if wrongly pulled
+# git reset HEAD~   	to revert last commit.
+# git reset --hard HEAD~1	Use --hard if you don't care about keeping the changes you made
+# git reset --soft HEAD~1      Use --soft if you want to keep your changes
+
+
+
+
